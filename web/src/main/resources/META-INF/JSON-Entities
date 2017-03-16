@@ -1,0 +1,52 @@
+Person
+{
+    "id": 0,
+    "name": "James",
+    "lastname": "Smith",
+    "documentId": "2498740240101",
+    "birthdate": null
+}
+
+Customer
+{
+    "id": 0,
+    "name": "Donald",
+    "lastname": "Taylor",
+    "documentId": "1662991540601",
+    "birthdate": null,
+    "nit": "1672047-4",
+    "membership": null
+}
+
+Employee
+{
+    "id": 0,
+    "name": "Mark",
+    "lastname": "Gray",
+    "documentId": "123855230101",
+    "birthdate": null,
+    "hireDate": "1447912800000",
+    "code": "123456",
+    "department":{
+        "id":"1",
+        "name":"HR"
+    }
+}
+
+Department
+{
+    "id":null,
+    "name":"HR"
+}
+{
+    "id":null,
+    "name":"Finance"
+}
+{
+    "id":null,
+    "name":"IT"
+}
+{
+    "id":null,
+    "name":"Planning"
+}
