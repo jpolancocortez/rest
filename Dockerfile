@@ -11,8 +11,8 @@ ENV PATH=$PATH:$JAVA_HOME/bin
 
 WORKDIR /opt/
 ADD app /opt
-RUN mvn -f schema/pom.xml clean install
-RUN mvn -f jepc/pom.xml clean install
+RUN mvn -X -f schema/pom.xml clean install
+RUN mvn -X -f jepc/pom.xml clean install
 RUN ls jepc/web/target
 
 RUN cp jepc/web/target/web-1.0.war /usr/local/tomee/webapps
