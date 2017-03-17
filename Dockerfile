@@ -11,7 +11,7 @@ ENV PATH=$PATH:$JAVA_HOME/bin
 
 WORKDIR /opt/
 ADD app /opt
-RUN mvn -X -f schema/pom.xml clean install
+RUN mvn -X -f schema/pom.xml install
 RUN mvn -X -f jepc/pom.xml clean install
 RUN ls jepc/web/target
 
