@@ -38,4 +38,9 @@ public class TestHero {
         assertTrue(true);
     }
 
+    @Test
+    public void testHero2() {
+        assertTrue(false);
+    }
+    
 }

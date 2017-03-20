@@ -21,6 +21,7 @@ WORKDIR /usr/local/tomee
 
 RUN sed -i "64i com.sun.jersey.server.impl.cdi.lookupExtensionInBeanManager = true" conf/system.properties
 ADD resources/tomee.xml conf/
+ADD resources/mysql-connector-java-5.1.37-bin.jar lib
 ENV PATH /usr/local/tomee/bin:$PATH
 #RUN catalina.sh &
 #RUN mvn -X -f /opt/jepc/pom.xml -Dmaven.test.skip=false clean install
