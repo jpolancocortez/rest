@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tomee>
+  <!-- see http://tomee.apache.org/containers-and-resources.html -->
+
+  <!-- activate next line to be able to deploy applications in apps -->
+  <!-- <Deployments dir="apps" /> -->
+  <Resource id="jdbc/project" type="DataSource">
+        JtaManaged true
+        JdbcDriver com.mysql.jdbc.Driver
+        JdbcUrl jdbc:mysql://172.20.2.15:3306/test
+        initialSize 20
+        maxActive 50
+        username root
+        password Seguros2013
+    </Resource>
+</tomee>
