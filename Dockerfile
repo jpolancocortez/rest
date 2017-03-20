@@ -20,7 +20,7 @@ RUN cp jepc/web/target/web-1.0.war /usr/local/tomee/webapps
 WORKDIR /usr/local/tomee
 
 RUN sed -i "64i com.sun.jersey.server.impl.cdi.lookupExtensionInBeanManager = true" conf/system.properties
-RUN cp -f resources/tomee.xml conf/
+ADD resources/tomee.xml conf/
 ENV PATH /usr/local/tomee/bin:$PATH
 #RUN catalina.sh &
 #RUN mvn -X -f /opt/jepc/pom.xml -Dmaven.test.skip=false clean install
