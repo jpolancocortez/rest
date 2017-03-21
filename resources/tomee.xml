@@ -12,5 +12,9 @@
         maxActive 50
         username root
         password Seguros2013
+        ValidationQuery SELECT 1
+       TestWhileIdle true
+       TimeBetweenEvictionRunsMillis 3600000
+       autoReconnect:true
     </Resource>
 </tomee>
